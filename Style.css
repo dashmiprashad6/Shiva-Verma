@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth ;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: top;
+    justify-content: top;
+    position: sticky;
+    top: 0px;
+    cursor: pointer;
+
+}
+
+.logoleft{
+    display: flex;
+    width: 30%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoleft img{
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    background-color: whitesmoke;
+    border-radius: 500px;
+}
+.logoleft li a {
+    color: white;
+    padding: 30px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navright{
+    display: flex;
+    width: 70%;
+    text-align: right;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.navright li{
+    padding: 30px;
+    list-style: none;
+}
+.navright li a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.navright li a:hover {
+    color: grey;
+}
+
+
+.box-main{
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url(img/B.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.firstHalf{
+    padding: 30px;
+}
+
+
+.secondHalf img{
+    width: 400px;
+    height: 600px;
+    border: 4px solid white;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.text-big{
+    font-size: 50px;
+    padding: 10px;
+}
+
+.text-small{
+    font-size: 25px;
+}
+
+.secright{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 80%;
+}
+
+.fVideo{
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.cardheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 50px;
+    font-size: 30px;
+}
+
+.m-card {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card img{
+    width: 150px;
+    height: 200px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.card img:hover{
+    transform: scale(200%);
+    transition: all 2s ease-in;
+}
+
+.name{
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-right: 15px;
+}
+
+.price{
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-right: 15px;
+}
+
+.pro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.profirst img{
+    width: 500px;
+    padding: 30px;
+}
+
+.prosecond {
+    font-size: 300px;
+}
+
+.ques{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.quarry{
+    padding: 20px;
+}
+.q{
+    font-size: 30px;
+    background-color: gainsboro;
+    padding: 30px;
+}
+.a{
+    font-size: 20px;
+    padding: 20px;
+}
+
+.text-footer {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+
+
+
+
+
+                        /* tablet */
+
+                        
+@media only screen and (max-width: 1140px){
+    .navbar{
+    flex-direction: column;
+    background-color: black;
+    transition: all 0.7s ease-out;
+    }
+    .logoleft{
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    }
+    .logoleft li {
+        padding: 0px;
+
+    }
+    
+    .navright{
+    flex-direction: column;
+    width: 80%;
+    }
+    .fVideo{
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+    .box-main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+    .secondHalf img{
+        width: 240px;
+        height: 300px;
+        border: 4px solid white;
+        border-radius: 100px;
+    }
+    .seconfHalf{
+        padding: 300px;
+        width: 30%;
+    }
+     
+    .text-big{
+        font-size: 35px;
+    }
+    
+    .text-small{
+        font-size: 20px;
+    }
+
+    .video{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+     
+    .m-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .card img{
+        width: 250px;
+        height: 400px;
+        padding: 50px;
+        justify-content: center;
+        
+    }
+    
+    .card img:hover{
+        transform: scale(150%);
+    }
+
+    .ques{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+               
+
+                         /* iPhone 12 Pro */
+
+
+
+@media only screen and (max-width: 500px){
+ 
+    .box-main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+    .secondHalf img{
+        width: 270px;
+        height: 330px;
+        border: 4px solid white;
+        border-radius: 100px;
+    }
+    .seconfHalf{
+        width: 30%;
+    }
+     
+    .text-big{
+        font-size: 25px;
+    }
+    
+    .text-small{
+        font-size: 10px;
+    }
+     
+    .quarry{
+        padding: 20px;
+    }
+    .q{
+        font-size: 23px;
+        background-color: gainsboro;
+        padding: 10px;
+    }
+    .a{
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+
+
